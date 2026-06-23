@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { breackpoints } from '../styles'
+import { breakPoints } from '../styles'
 
 export const ListContainer = styled.div`
   display: grid;
@@ -7,11 +7,11 @@ export const ListContainer = styled.div`
   gap: 32px;
   padding: 56px 0;
 
-  @media (max-width: ${breackpoints.tablet}) {
+  @media (max-width: ${breakPoints.tablet}) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (max-width: ${breackpoints.mobile}) {
+  @media (max-width: ${breakPoints.mobile}) {
     grid-template-columns: 1fr;
   }
 `

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { breackpoints, cores } from '../styles'
+import { breakPoints, cores } from '../styles'
 
 export const Modal = styled.div`
   position: fixed;
@@ -44,13 +44,14 @@ export const ModalContainer = styled.div`
 `
 
 export const ModalContent = styled.div`
-  background-color: ${cores.salmao};
+  background-color: ${cores.corSecundaria};
   padding: 32px;
   color: ${cores.corDeFundo};
   display: flex;
   width: 1024px;
 
-  @media (max-width: ${breackpoints.tablet}) {
+  @media (max-width: ${breakPoints.tablet}) {
+    //  Forma correta!
     flex-direction: column; // Empilha imagem e texto no mobile
     padding: 16px;
     max-height: 80vh; // Evita que o modal seja maior que a tela
@@ -64,7 +65,7 @@ export const ModalContent = styled.div`
     object-fit: cover;
     margin-right: 24px;
 
-    @media (max-width: ${breackpoints.tablet}) {
+    @media (max-width: ${breakPoints.tablet}) {
       width: 100%; // Imagem ocupa toda a largura no mobile
       height: 200px;
       margin-right: 0;
@@ -94,7 +95,7 @@ export const ModalContent = styled.div`
 
 export const BotaoModal = styled.button`
   background-color: ${cores.corDeFundo}; // Cor clara do botão
-  color: ${cores.salmao};
+  color: ${cores.corPrincipal};
   border: none;
   padding: 4px 8px;
   font-weight: 700;
@@ -102,7 +103,7 @@ export const BotaoModal = styled.button`
   cursor: pointer;
   width: fit-content;
 
-  @media (max-width: ${breackpoints.tablet}) {
+  @media (max-width: ${breakPoints.tablet}) {
     width: 100%;
     padding: 12px;
   }

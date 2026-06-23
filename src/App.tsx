@@ -6,7 +6,7 @@ import Perfil from './Pages/Perfil'
 import Footer from './Footer'
 import { store } from './store'
 import { Provider } from 'react-redux'
-import Cart from './Cart'
+import Cart from './components/Cart'
 
 function App() {
   return (

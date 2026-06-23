@@ -1,9 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux'
-import { RootReducer } from '../store'
+import { RootReducer } from '../../store'
 
-import { close, remove } from '../store/reducers/cart'
+import { close, remove } from '../../store/reducers/cart'
 import Button from '../Button'
-import { formataPreco } from '../utils/formatters'
+// Altere para o caminho completo do arquivo de formatação:
+import { formataPreco } from '../../utils/formatters'
 import {
   CartContainer,
   Overlay,

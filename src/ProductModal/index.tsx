@@ -2,8 +2,7 @@ import { useDispatch } from 'react-redux'
 import { toast } from 'react-toastify'
 
 import closeIcon from '../assets/images/close.png'
-// Caminho correto sugerido para encontrar o tipo Prato
-import { Prato } from '../Models/Restaurant'
+import { Prato } from '../ProductList'
 import { formataPreco } from '../utils/formatters'
 import { ModalContainer, Modal, BotaoModal, ModalContent } from './styles'
 import { add, open } from '../store/reducers/cart'

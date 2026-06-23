@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import HeroImg from '../assets/images/Vector.png'
-import { breackpoints } from '../styles'
+import { breakPoints } from '../styles'
 
 export const Imagem = styled.div`
   background-image: url(${HeroImg});
@@ -30,12 +30,12 @@ export const HeroContainer = styled.div`
     margin-bottom: 139px;
     cursor: pointer;
 
-    @media (max-width: ${breackpoints.tablet}) {
+    @media (max-width: ${breakPoints.tablet}) {
       margin-bottom: 40px;
     }
   }
 
-  @media (max-width: ${breackpoints.tablet}) {
+  @media (max-width: ${breakPoints.tablet}) {
     font-size: 24px;
     line-height: 32px;
     max-width: 100%;

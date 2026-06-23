@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import { cores, breakPoints } from '../../styles'
 import { ButtonContainer } from '../Button/styles'
-import remover from '../assets/images/lixeira.png'
-import closeIcon from '../assets/images/close.png'
+import closeIcon from '../../assets/images/close.png' // Mudamos para closeIcon
+import remover from '../../assets/images/lixeira.png' // Mudamos para remover
 
 export const Overlay = styled.div`
   position: absolute;

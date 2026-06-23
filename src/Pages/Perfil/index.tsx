@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import Banner from '../../Banner'
+import Banner from '../../Hero'
 import HeaderPerfil from '../../HeaderPerfil'
 import ProductList from '../../ProductList'
 import { useGetPratosQuery } from '../../services/api'

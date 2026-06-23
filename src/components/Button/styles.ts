@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { cores } from '../styles'
+import { cores, breakPoints } from '../../styles'
 import { Link } from 'react-router-dom'
 
 type Props = {
@@ -17,12 +17,12 @@ const BaseStyles = css<Props>`
 
   /* Lógica de inversão de cores */
   background-color: ${(props) =>
-    props.variant === 'primary' ? cores.salmao : cores.salmaoClaro};
+    props.variant === 'primary' ? cores.corPrincipal : cores.corSecundaria};
 
   color: ${(props) =>
-    props.variant === 'primary' ? cores.salmaoClaro : cores.salmao};
+    props.variant === 'primary' ? cores.corSecundaria : cores.corPrincipal};
 
-  border: 1px solid ${cores.salmao};
+  border: 1px solid ${cores.corPrincipal};
 `
 
 export const ButtonContainer = styled.button<Props>`
